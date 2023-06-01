@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * @Author：tian
- * @Description:
+ * @Description:分页查询结果模型类
  * @Date：2023/5/29 16:56
  */
 @Data
