@@ -16,7 +16,7 @@ import java.util.Arrays;
 public class ContentCodeGenerator {
 
 	// TODO 修改服务名以及数据表名
-	private static final String SERVICE_NAME = "content";
+	private static final String SERVICE_NAME = "custom";
 
 	//数据库账号
 	private static final String DATA_SOURCE_USER_NAME  = "root";
@@ -26,15 +26,15 @@ public class ContentCodeGenerator {
 	private static final String[] TABLE_NAMES = new String[]{
 //			"mq_message",
 //			"mq_message_history"
-			 "course_base",
-			 "course_market",
-			 "teachplan",
-			 "teachplan_media",
-			 "course_teacher",
-			"course_category",
-			 "course_publish",
-			 "course_publish_pre"
-
+//			 "course_base",
+//			 "course_market",
+//			 "teachplan",
+//			 "teachplan_media",
+//			 "course_teacher",
+//			"course_category",
+//			 "course_publish",
+//			 "course_publish_pre"
+"custom_info"
 	};
 
 	// TODO 默认生成entity，需要生成DTO修改此变量
@@ -67,7 +67,7 @@ public class ContentCodeGenerator {
 		// 数据库配置
 		DataSourceConfig dsc = new DataSourceConfig();
 		dsc.setDbType(DbType.MYSQL);
-		dsc.setUrl("jdbc:mysql://localhost:3306/xcplus_" + SERVICE_NAME
+		dsc.setUrl("jdbc:mysql://localhost:3306/bank_" + SERVICE_NAME
 				+ "?serverTimezone=UTC&useUnicode=true&useSSL=false&characterEncoding=utf8");
 //		dsc.setDriverName("com.mysql.jdbc.Driver");
 		dsc.setDriverName("com.mysql.cj.jdbc.Driver");
